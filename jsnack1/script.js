@@ -19,7 +19,7 @@ document.getElementById('check').addEventListener('click',
         }
 
         const result = document.getElementById('result');
-        if (nameFound = true) {
+        if (nameFound == true) {
             result.innerText = 'Welcome!'
         } else {
             result.innerText = 'Your name is not on the list!'

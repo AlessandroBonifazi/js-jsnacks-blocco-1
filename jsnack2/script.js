@@ -7,9 +7,12 @@ console.log('JS OK!')
 const odd = [];
 
 for (let i = 0; i < 6; i++) {
-    let number = parseInt(prompt('Input a number'));
+    let number;
+    while (isNaN(number)) {
+        number = parseInt(prompt(`${i + 1} 'Input a number'`));
+    }
 
-    if (number % 2 === 1) {
+    if (number % 2 !== 0) {
         odd.push(number);
         console.log('numeri dispari: ' + odd);
     }

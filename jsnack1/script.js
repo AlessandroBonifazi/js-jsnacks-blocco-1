@@ -13,7 +13,8 @@ document.getElementById('check').addEventListener('click',
         let nameFound = false;
 
         for (let i = 0; i < guestList.length && !nameFound; i++) {
-            if (guestName === guestList[i]) {
+            const invitedGuest = guestList[i];
+            if (guestName === invitedGuest) {
                 nameFound = true;
             }
         }
